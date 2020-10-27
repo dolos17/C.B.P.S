@@ -1,0 +1,1252 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap);
+
+
+
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'josefin sans', sans-serif;
+}
+
+body {
+    background: rgba(143, 161, 182, 0.24);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    max-height: 10vh;
+    z-index: 1000;
+}
+
+header.sticky {
+    background: rgba(153, 153, 153, 0.65);
+    padding: 0px 100px;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+.navbar {
+    height: 10vh;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    font-size: 20pt;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #ffcdd2;
+}
+
+
+
+.navbar-brand span {
+    font-size: 20pt;
+    text-transform: capitalize;
+    font-weight: 600;
+    background: linear-gradient(100deg, #81ffc2, #ffafda);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 20px;
+    
+}
+
+ .active {
+    background: linear-gradient(100deg, #81ffc2, #ffafda);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    color: #fafafa;
+    text-transform: capitalize;
+    font-size: 13pt;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    background: linear-gradient(100deg, #81ffc2, #ffafda);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+.nav-cta {
+    background: linear-gradient(120deg, #606c88, #3f4c6b);
+    border-radius: 20%;
+    font-size: 6pt;
+    transition: .3s;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+} 
+
+.dropdown-menu {
+    background: none;
+    transition: .3s;
+    border: none;
+}
+
+.dropdown-item {
+    color: #fafafa;
+    text-transform: capitalize;
+    font-size: 13pt;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(100deg, #81ffc2, #ffafda);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+
+
+/* swiper css */
+
+#banner-parallax-slide > .swiper-container {
+    height: 100vh;
+}
+
+
+
+#banner-parallax-slide > .swiper-container .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2), rgba(0,0,0,0.001)), url('../assets/images/trolls.png');
+}
+
+#banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide {
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+    padding: 0 200px;
+}
+
+#banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide .title h1 {
+    font-size: 35pt;
+    text-transform: capitalize;
+    font-weight: 600;
+    background: linear-gradient(120deg, #d1c3cf, #100cee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+#banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide .subtitle h3 {
+    background: linear-gradient(120deg, #c3c3c5, #d1c3cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+#banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide .txt p {
+    font-size: 30pt;
+    color: #ccc;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+
+
+
+#banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide .btnbx .btn{
+    text-transform: capitalize;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    color: #f3f3f3;
+    background: linear-gradient(120deg, #c3c3c5, #d1c3cf);
+    outline: none;
+}
+
+#banner-parallax-slide > .swiper-container > .swiper-button-next, #banner-parallax-slide > .swiper-container > .swiper-button-prev {
+    color: #ccc !important;
+   
+}
+
+
+/* sticky social media icons */
+
+.social {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.social a {
+    margin: 5px;
+    background: #ecf0f136;
+    padding: 10px;
+    text-align: right;
+    width: 300px;
+    font-size: 20pt;
+    color: seashell;
+    font-weight: 600;
+    border-radius: 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: translate(-260px, 0);
+    transition: .3s;
+}
+
+.social a:hover {
+    transform: translate(-50px, 0);
+}
+
+.social a:nth-child(1) {
+    color: #3b5999;
+}
+
+.social a:nth-child(2) {
+    color: #55acee;
+}
+
+.social a:nth-child(3) {
+    color: #e4405f
+}
+
+.social a:nth-child(4) {
+    color: #eb4924;
+}
+
+.social #icons {
+    margin-left: 45px;
+    font-size: 30pt;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    
+}
+
+.social #icons::nth-child(3) {
+    background: linear-gradient(45deg, #ec008c, #fc6767);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.principal {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 5vh 0;
+
+}
+
+.principal-speechbx {
+    display: flex;
+  
+    align-items: center;
+    height: auto;
+  
+}
+
+.principal-speechbx .principal-img {
+    flex: 1;
+    
+    
+}
+
+.principal-speechbx .principal-img img {
+    height: 80vh;
+}
+
+.principal-speechbx .speechbox {
+    flex: 1;
+}
+
+.principal-speechbx .speechbox .header {
+    margin-bottom: 30px;
+}
+
+.principal-speechbx .speechbox .header .cursive {
+    font-size: 30pt;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: coral;
+    font-family: 'Mr De Haviland', handwriting;
+}
+
+.principal-speechbx .speechbox .header .bold {
+    font-size: 25pt;
+    font-weight: 500;
+    font-family: cursive;
+    width: 300px;
+    color: darkslateblue;
+}
+
+.principal-speechbx .speechbox .speech .greeting {
+    font-size: 14pt;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.principal-speechbx .speechbox .speech .greeting small {
+    font-size: 10pt;
+    font-weight: 600;
+    color: darkslateblue;
+    font-family: cursive;
+}
+
+.principal-speechbx .speechbox .speech .text {
+    font-size: 12pt;
+    font-weight: 300;
+    color: #49494e;
+    text-align: justify;
+}
+
+.principal-speechbx .speechbox .speech .text strong {
+    color: #4b4b50;
+    text-transform: capitalize;
+}
+
+.principal-speechbx .speechbox .footer {
+    float: right;
+    padding-right: 50px;
+}
+
+.principal-speechbx .speechbox .footer .name {
+    font-size: 20pt;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+.principal-speechbx .speechbox .footer .position {
+    font-size: 14pt;
+    color:  darkslateblue;
+    font-weight: 500;
+}
+
+
+
+.choose-us {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 10vh 0;
+}
+
+.choose-us > .header {
+  text-align: center;
+}
+
+.choose-us > .header .cursive {
+    font-size: 30pt;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: coral;
+    font-family: 'Mr De Haviland', handwriting;
+}
+
+.choose-us > .header .bold {
+    font-size: 20pt;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: cursive;
+    color: darkslateblue;
+}
+
+.choose-us > .sub-header {
+    font-size: 12pt;
+    font-weight: 300;
+    color: #49494e;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choose-us > .choose-box {
+    display: flex;
+}
+
+.choose-us > .choose-box > .left-col {
+    flex: 1;
+}
+
+.choose-us > .choose-box > .left-col > .header .cursive {
+    font-size: 30pt;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: coral;
+    font-family: 'Mr De Haviland', handwriting;
+}
+
+.choose-us > .choose-box > .left-col > .header .bold {
+    font-size: 20pt;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: cursive;
+    color: darkslateblue;
+}
+
+.choose-us > .choose-box > .left-col > .text {
+    font-size: 12pt;
+    font-weight: 300;
+    color: #49494e;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+
+.choose-us > .choose-box > .left-col > .list ul li {
+    list-style-type: none;
+    color: darkslateblue;
+    font-family: cursive;
+}
+
+.choose-us > .choose-box > .left-col > .list ul li::before {
+    content: '>';
+    margin: 10px;
+    color: coral;
+    font-weight: 500;
+    
+    
+}
+
+.choose-us > .choose-box > .left-col > .btnbx .btn {
+    text-transform: capitalize;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    color: #f3f3f3;
+    background: linear-gradient(120deg, #c3c3c5, #d1c3cf);
+    outline: none;
+}
+
+.choose-us > .choose-box > .right-col {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.choose-us > .choose-box > .right-col .cad {
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin:5px;
+}
+
+.choose-us > .choose-box > .right-col .cad .icon {
+    font-size: 25pt;
+    background: #ccc;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    margin: auto;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    font-weight: 200;
+    color: coral;
+    font-family: 'Mr De Haviland', handwriting;
+}
+
+.choose-us > .choose-box > .right-col .cad > .text h1 {
+    font-size: 14pt;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: cursive;
+    color: darkslateblue;
+}
+
+.choose-us > .choose-box > .right-col .cad > .text p {
+    font-size: 10pt;
+    font-weight: 300;
+    color: #49494e;
+    margin-bottom: 10px;
+}
+
+
+.tour {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 10vh 0;
+}
+
+.tour > .header {
+    text-align: center;
+}
+
+.tour > .header > .cursive {
+    font-size: 30pt;
+    font-weight: 200;
+    color: coral;
+    font-family: 'Mr De Haviland', handwriting;
+}
+
+.tour > .header > .bold {
+    font-size: 25pt;
+    font-weight: 500;
+    font-family: cursive;
+    color: darkslateblue;
+}
+
+.tour > .tour-box {
+    margin-top: 20vh;
+    
+}
+
+.tour > .tour-box .tour-tab {
+    display: flex;
+    align-items: center; 
+    margin-top: 5vh;
+}
+
+.tour > .tour-box .tour-tab-reverse {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 5vh;
+}
+
+.tour > .tour-box .tour-tab .tour-img, .tour > .tour-box .tour-tab-reverse .tour-img {
+    flex: 1;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.tour > .tour-box .tour-tab .tour-img img, .tour > .tour-box .tour-tab-reverse .tour-img img {
+    height: 55vh;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #666;
+}
+
+
+
+.tour > .tour-box .tour-tab .tour-text, .tour > .tour-box .tour-tab-reverse .tour-text  {
+    flex: 1;
+    text-align: center;
+    padding: 0 25px;
+}
+
+
+
+.tour > .tour-box .tour-tab .tour-text .bold, .tour > .tour-box .tour-tab-reverse .tour-text .bold  {
+    font-size: 20pt;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: cursive;
+    color: darkslateblue;
+}
+
+
+.tour > .tour-box .tour-tab .tour-text, .tour > .tour-box .tour-tab-reverse .tour-text {
+    font-size: 12pt;
+    font-weight: 300;
+    color: #49494e;
+    margin-bottom: 10px;
+}
+
+
+
+.testimonies {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 20vh 0; 
+}
+
+.testimonies > .header {
+    text-align: center;
+}
+
+.testimonies > .header .cursive {
+    font-size: 30pt;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: coral;
+    font-family: 'Mr De Haviland', handwriting;
+}
+
+.testimonies > .header .bold {
+    font-size: 20pt;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: cursive;
+    color: darkslateblue;
+}
+
+.testimonies > .comment-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonies > .comment-box .comment-card{
+   max-width: 500px;
+   height: 250px;
+   margin: 20px;
+   background: linear-gradient(120deg, #ffc9dd4f, #eabdff79);
+   padding: 15px 30px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 3px #7f8c8d;
+}
+
+
+
+
+
+
+.testimonies > .comment-box .comment-card  .text {
+    font-size: 12pt;
+    color: rgb(97, 95, 95);
+    font-weight: 300;  
+    text-align: justify;
+}
+
+
+.testimonies > .comment-box .comment-card   .text::before {
+    content: open-quote;
+    font-size: 20pt;
+    font-weight: 600;
+    color: coral;
+}
+
+.testimonies > .comment-box .comment-card  .text::after {
+    content: close-quote;
+    font-size: 20pt;
+    font-weight: 600;
+    color: coral;
+}
+
+.testimonies > .comment-box .comment-card .footer {
+    float: right;
+}
+
+.testimonies > .comment-box .comment-card .footer .name {
+    font-size: 16pt;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+.testimonies > .comment-box .comment-card .footer .pos {
+    font-size: 12pt;
+    color:  darkslateblue;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+.curi-mini {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: coral;
+
+}
+
+.curi-mini > .text {
+    width: 70%;
+    font-size: 16pt;
+    text-align: center;
+    font-weight: 300;
+}
+
+.curi-mini > .text .bold {
+    font-weight: 500;
+    font-size: 20pt;
+    color: darkslateblue;
+    
+}
+
+.curi-mini > .text .bold #arrow {
+    font-size: 15pt;
+}
+
+.registration {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(63, 73, 82, 0.5), rgba(43, 43, 65, 0.445)), url('../assets/images/re_bg3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+
+}
+
+.registration > .reg-bx {
+    border: 10px solid coral;
+    padding: 60px 100px;
+    
+    border-radius: 0px 20px 0px 20px;
+}
+
+.registration > .reg-bx .header .cursive {
+    font-size: 30pt;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: coral;
+    font-family: 'Mr De Haviland', handwriting;
+}
+
+.registration > .reg-bx .header .bold {
+    font-size: 25pt;
+    font-weight: 500;
+    font-family: cursive;
+    width: 300px;
+    color: darkslateblue;
+    margin: 30px
+}
+
+.registration > .reg-bx .cta-bx {
+    margin-top: 10px;
+}
+
+.registration > .reg-bx .cta-bx .cta {
+    color: aliceblue;
+    background: coral;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.footer-sec {
+    height: auto;
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.footer-sec > .foot-box {
+    display: flex;
+    padding-top: 5vh;
+    align-items: center;
+}
+
+.footer-sec > .foot-box .box {
+    width: 100%;
+   
+}
+
+.border {
+    display: block;
+    height: 200px;
+    width: 2px;
+    background: #666;
+    margin: 0 10px
+}
+
+.footer-sec > .foot-box .about {
+    flex: 1;
+    
+}
+
+.footer-sec > .foot-box .about .txt {
+    font-size: 16pt;
+    color: #9e9e9e;
+}
+
+.footer-sec > .foot-box .about .txt a{
+    color: coral;
+}
+
+
+
+.footer-sec > .foot-box .about .phone{
+    color: #9e9e9e;
+}
+
+.footer-sec > .foot-box .box .information {
+    flex: 1;
+   
+}
+
+.footer-sec > .foot-box .box .information .bold {
+    font-size: 16pt;
+    text-transform: capitalize;
+}
+
+.footer-sec > .foot-box .box .information .sub-links {
+    list-style: none;
+}
+
+.footer-sec > .foot-box .box .information .sub-links li a {
+    color: coral;
+}
+
+
+
+
+
+
+.footer-sec > .foot-box .icons-time {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-sec > .foot-box .icons-time .icons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.footer-sec > .foot-box .icons-time .icons img {
+    height: 5vh;
+    margin: 0 20px;
+}
+
+.footer-sec > .foot-box .icons-time .time h4 {
+    font-size: 16pt;
+    color: coral;
+    text-transform: capitalize;
+}
+
+.footer-sec > .foot-box .icons-time .time .bold {
+    font-size: 16pt;
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+.copyright p {
+    text-align: center;
+}
+
+.copyright p {
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    
+    header {
+   background: #757575;
+}
+    
+    header.sticky {
+    background: #757575;
+    
+  }
+    
+    .navbar {
+   background: #757575;
+}
+    
+    .navbar-nav {
+   text-align: center;
+   background: #757575;
+   position: absolute;
+   left: 0;
+   top: 0;
+   padding-top: 10vh;
+   width: 100%;
+        height: 100vh;
+       
+        
+}
+    
+
+    
+    
+    
+    #ham {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+        z-index: 1000;
+}
+
+.bar {
+    background: linear-gradient(120deg, #606c88, #3f4c6b);
+    width: 100%;
+    height: 8px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+#bar-1 {
+    transform: translateY(-6px);
+}
+
+#bar-3 {
+    transform: translateY(6px);
+}
+
+
+
+   .change .bar{
+        background: rgba(136, 28, 28, 0.753);
+    }
+
+
+   .change #bar-1 {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+   .change #bar-2 {
+        opacity: 0;
+    }
+
+   .change #bar-3 {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    
+    
+    
+
+    header {
+        max-height: 10vh;
+        padding: 0 20px; 
+    }
+
+    header.sticky {
+        padding: 0px 20px; 
+      }
+
+    .navbar {
+        height: 10vh;
+    }
+
+    .nav-item {
+        margin-left: 0; 
+    }
+
+    #banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide {
+        padding: 0 25px;
+    }
+
+    #banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide .title h1 {
+        font-size: 25pt; 
+    }
+ 
+    #banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide .txt p {
+        font-size: 10pt;
+    }
+
+    #banner-parallax-slide > .swiper-container > .swiper-wrapper .swiper-slide .btnbx .btn{
+        
+        padding: 5px 10px;
+        
+    }
+
+    #banner-parallax-slide > .swiper-container > .swiper-button-next, #banner-parallax-slide > .swiper-container > .swiper-button-prev {
+       display: none;
+    }
+
+    .principal-speechbx {
+        flex-direction: column;
+        height: auto;
+      
+    }
+
+    .principal-speechbx .principal-img {
+        margin-bottom: 10vh;
+    }
+
+    .principal-speechbx .principal-img img {
+        height: 50vh;
+    }
+
+    .choose-us > .choose-box {
+       flex-direction: column;
+    }
+
+    .choose-us {
+        padding: 10vh 0;
+    }
+
+    .choose-us > .choose-box > .right-col { 
+        margin-top: 10vh;
+    }
+
+    .choose-us > .choose-box > .right-col .cad {
+        width: 200px;
+        height: auto;
+    }
+
+    .choose-us > .choose-box > .right-col .cad .icon {
+        font-size: 16pt;
+        width: 50px;
+        height: 50px;
+        line-height: 55px;
+    }
+    
+    .choose-us > .choose-box > .right-col .cad > .text h1 {
+        font-size: 12pt;
+        
+    }
+
+    
+    .choose-us > .choose-box > .right-col .cad > .text p {
+        font-size: 10pt;
+        font-weight: 300;
+        color: #49494e;
+        margin-bottom: 10px;
+    }
+    
+    .testimonies {
+        padding: 5vh 0; 
+    }
+
+    .testimonies > .comment-box .comment-card{
+        max-width: 450px;
+        height: 200px;
+        margin: 20px;
+        padding: 5px 15px;
+     }
+
+     .testimonies > .comment-box .comment-card  .text {
+        font-size: 10pt;
+        font-weight: 400;  
+    }
+
+    .testimonies > .comment-box .comment-card .footer .name {
+        font-size: 12pt;
+        font-weight: 300;
+    }
+    
+    
+    .testimonies > .comment-box .comment-card .footer .pos {
+        font-size: 10pt;
+        font-weight: 400;
+    }
+    
+    
+
+
+.social a {
+    margin: 5px;
+    background: #ecf0f136;
+    padding: 10px;
+    text-align: right;
+    width: 300px;
+    font-size: 20pt;
+    color: seashell;
+   
+    font-weight: 600;
+    border-radius: 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: translate(-260px, 0);
+    transition: .3s;
+}
+
+.social a:hover {
+    transform: translate(-100px, 0);
+}
+
+.tour > .tour-box .tour-tab {
+    flex-direction: column;
+}
+
+.tour > .tour-box .tour-tab-reverse {
+    flex-direction: column;
+}
+
+.tour > .tour-box .tour-tab .tour-img img, .tour > .tour-box .tour-tab-reverse .tour-img img {
+    height: 30vh;
+    margin-bottom: 30px;
+}
+
+.tour > .tour-box .tour-tab .tour-text, .tour > .tour-box .tour-tab-reverse .tour-text  {
+    width: 350px;
+}
+    
+    .registration {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(63, 73, 82, 0.5), rgba(43, 43, 65, 0.445)), url('../assets/images/re_bg3.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+    
+    
+    .registration > .reg-bx {
+    border: 5px solid coral;
+    padding: 15px 30px;
+    
+    border-radius: 0px 20px 0px 20px;
+}
+
+    .registration > .reg-bx .header .cursive {
+    font-size: 20pt;
+}
+    
+    .registration > .reg-bx .header .bold {
+    font-size: 15pt;
+    width: 200px;
+    margin: 20px;
+    
+}
+    
+    .registration > .reg-bx .cta-bx {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+    
+    .registration > .reg-bx .cta-bx .cta {
+    color: aliceblue;
+    background: coral;
+    padding: 10px 10px;
+    font-size: 13pt; 
+    border-radius: 8px;
+}
+    
+    
+.footer-sec > .foot-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    align-items: center;
+}
+    
+    .border {
+    display: none;
+    
+}
+    
+    .footer-sec > .foot-box .icons-time {
+    flex: 1;
+    text-align: left;
+}
+    
+    
+
+
+}
+
